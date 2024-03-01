@@ -1,0 +1,78 @@
+{%extends "layout.html"%}
+
+{% block content %}
+<div class="row"><br></div>
+
+<div class="row">
+    <div class="col-2">
+        <img src="static/img/logo.png" class="img-fluid" alt="">
+    </div>
+    <div class="col-8">
+        <h6>Hello, my name is Nash, and I am passionate about the intricate wonders of the solar system. With years of dedicated study and exploration, I've gained expertise in understanding the complexities of our cosmic neighborhood. From the mesmerizing dance of planets around the Sun to the mysterious realms of asteroids and comets, I have delved deep into unraveling the mysteries of our celestial home. Whether it's discussing the formation of planets or the dynamic interactions shaping our solar system, I am here to provide insightful answers to any questions you may have. Let's embark on a journey through the cosmos together!</h6>
+    </div>
+</div>
+<div class="row"><br></div>
+
+<div class="row">
+    
+    <br>
+    <br>
+    <div class="col-2"></div>
+    <div class="col-8">
+        <h4>After Pressing the button, please say "Hi Nash" to start the conversation.</h4>
+    </div>
+    
+</div>
+<div class="row"><br></div>
+<div class="row">
+    <div class="col-5"></div>
+    <div class="col-6">
+        <div class="container">
+            
+            <div class="content-section">
+                <form method="POST" action="">
+                    {{form.hidden_tag()}}
+                    <fieldset class="form-group">
+                        <div>
+                            {{form.submit(class="btn btn-outline-info col-auto")}}
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row"><br></div>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-2">
+        <h6>Nash : </h6>
+    </div>
+    
+    <div class="col-8">
+        <h6>{{nash}}</h6>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-2">
+        <h6>Question : </h6>
+    </div>
+    <div class="col-8">
+        <h6>{{Question}}</h6>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-2">
+        <h6>Answer : </h6>
+    </div>
+    <div class="col-8">
+        <h6>{{Answer}}</h6>
+    </div>
+</div>
+<div class="row"><br></div>
+<div class="row"><br></div>
+{% endblock content %}

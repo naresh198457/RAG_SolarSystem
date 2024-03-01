@@ -1,0 +1,143 @@
+{%extends "layout.html"%}
+
+
+{% block content %}
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url(static/img/Solar_System_v1.jpg)">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>ASTROMASTER</span></h2>
+                <p class="animate__animated animate__fadeInUp">This is solar sysetm app. You can ask any question related to solar system. It can give you the answer with cool visuals. </p>
+                <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url(static/img/Solar_System_v3.jpg)">
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url(static/img/Solar_System_v4.jpg)">
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="static/img/Solar_System_v2.gif" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Solar System</h3>
+            <p>
+              The solar system, comprising the Sun and all celestial objects bound to it by gravity, is a wondrous expanse that has fascinated humanity for centuries. At its heart, the Sun, a luminous sphere of superheated gases, serves as the gravitational anchor around which eight planets orbit, each with its own unique characteristics and mysteries. Starting from the innermost planet, Mercury, a scorched world with a barren surface, to the outermost gas giants like Jupiter and Saturn, adorned with swirling storms and intricate ring systems, the diversity within our solar system is staggering. Beyond the planets lie dwarf planets, asteroids, comets, and a vast array of celestial bodies, each contributing to the dynamic and ever-evolving tapestry of our cosmic neighborhood. The study of the solar system not only enriches our understanding of planetary science but also sheds light on the origins of our own planet and the potential for life beyond Earth. As exploration missions continue to unveil new discoveries and technological advancements push the boundaries of our knowledge, the solar system remains a captivating realm awaiting further exploration and understanding.
+            </p>
+          
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+    
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <img src="static/img/Mercury.jfif" alt="Mercury" style="width:100px;height:100px;">
+              <h4><a href="">Mercury</a></h4>
+              <p>The closest planet to the Sun, with extreme temperature variations between its scorching days and freezing nights.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <img src="static/img/Venus.jfif" alt="Venus" style="width:100px;height:100px;">
+              <h4><a href="">Venus</a></h4>
+              <p>A hostile world with a thick atmosphere of toxic gases, shrouded in perpetual clouds and featuring a runaway greenhouse effect.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <img src="static/img/Earth.jfif" alt="Earth" style="width:100px;height:100px;">
+              <h4><a href="">Earth</a></h4>
+              <p>Our home planet, teeming with life and boasting a diverse array of ecosystems, including vast oceans and towering mountains.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <img src="static/img/Mars.png" alt="Mars" style="width:100px;height:100px;">
+              <h4><a href="">Mars</a></h4>
+              <p>The Red Planet, with a thin atmosphere and surface features suggestive of past water activity, making it a prime target for exploration.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <img src="static/img/Jupiter.jpg" alt="Juipter" style="width:100px;height:100px;">
+              <h4><a href="">Jupiter</a></h4>
+              <p>The largest planet in our solar system, known for its iconic Great Red Spot and its numerous moons, including the Galilean moons.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <img src="static/img/saturn.png" alt="Saturn" style="width:100px;height:100px;">
+              <h4><a href="">Saturn</a></h4>
+              <p>Adorned with majestic rings made of ice and rock particles, Saturn is a gas giant with a distinctive golden hue.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <img src="static/img/Uranus_2.jpg" alt="Uranus" style="width:100px;height:100px;">
+              <h4><a href="">Uranus</a></h4>
+              <p>A planet lying on its side, characterized by its unique rotational axis, icy composition, and a system of faint rings.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <img src="static/img/Netune_2.jpg" alt="Neptune" style="width:100px;height:100px;">
+              <h4><a href="">Neptune</a></h4>
+              <p>The outermost planet in the solar system, known for its striking blue coloration and its windy, stormy atmosphere.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+  </main><!-- End #main -->
+{% endblock content %}
