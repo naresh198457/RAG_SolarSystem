@@ -5,11 +5,11 @@ from openai import OpenAI  # Importing OpenAI library for text generation
 from pinecone import Pinecone  # Importing Pinecone library for vector indexing
 
 # Initializing OpenAI with API key
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = '------'
 client = OpenAI()  # Initializing OpenAI client
 
 # Initializing Pinecone with API key and environment
-os.environ['PINECONE_API_KEY'] = '05ac17ba-3537-4e2e-a061-dc75ce2f948e'
+os.environ['PINECONE_API_KEY'] = '-----'
 os.environ['PINECONE_ENVIRONMENT'] = 'gcp-starter'
 api_key = os.getenv('PINECONE_API_KEY')
 env = os.getenv('PINECONE_ENVIRONMENT')

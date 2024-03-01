@@ -9,11 +9,11 @@ from pinecone import Pinecone  # Importing Pinecone library for vector indexing
 import json, ast  # Importing JSON library for handling JSON data
 
 # Initializing OpenAI
-os.environ['OPENAI_API_KEY'] = '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'  # Setting OpenAI API key
+os.environ['OPENAI_API_KEY'] = '-----'  # Setting OpenAI API key
 client = OpenAI()  # Initializing OpenAI client
 
 # Initializing Pinecone
-os.environ['PINECONE_API_KEY'] = '05ac17ba-3537-4e2e-a061-dc75ce2f948e'  # Setting Pinecone API key
+os.environ['PINECONE_API_KEY'] = '----'  # Setting Pinecone API key
 
 # Function to get embeddings from OpenAI
 def get_embedding(text, model="text-embedding-ada-002"):
@@ -55,9 +55,7 @@ def convert_data(chunk):
     return data
 
 # Reading the Solar Data from an Excel file
-Solar_Data = pd.read_excel(r"G:\My Drive\ITC_DS\Assignments\Week7_RAG\Topics\Solar_Data_V3.xlsx")
-print(Solar_Data.shape)  # Print the shape of the DataFrame
-print(Solar_Data.columns)  # Print the columns of the DataFrame
+Solar_Data = pd.read_excel(r"G:\My Drive\PersonalProjects\RAG_SolarSystem\Solar_Data_V3.xlsx")
 
 # Initializing a text splitter
 my_text_splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=100, length_function=len)
